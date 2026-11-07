@@ -1,0 +1,28 @@
+T: 1000
+attn:
+- 2
+batch_size: 80
+beta_1: 0.0001
+beta_T: 0.02
+channel: 128
+channel_mult:
+- 1
+- 2
+- 3
+- 4
+device: "cuda:0"
+dropout: 0.15
+epoch: 200
+grad_clip: 1.0
+img_size: 32
+lr: 0.0001
+multiplier: 2.0
+nrow: 8
+num_res_blocks: 2
+sampledImgName: "SampledNoGuidenceImgs.png"
+sampledNoisyImgName: "NoisyNoGuidenceImgs.png"
+sampled_dir: "./SampledImgs/"
+save_weight_dir: "./Checkpoints/"
+state: "eval"
+test_load_weight: "cifar_ddim_ckpt.pt"
+training_load_weight: null

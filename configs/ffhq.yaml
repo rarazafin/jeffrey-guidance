@@ -1,0 +1,18 @@
+attention_resolutions: 16
+channel_mult: ''
+class_cond: False
+dropout: 0.1
+image_size: 256
+learn_sigma: True
+model_path: "ffhq_ddim_ckpt.pt"
+num_channels: 128
+num_head_channels: 64
+num_heads: 4
+num_heads_upsample: -1
+num_res_blocks: 1
+resblock_updown: True
+use_checkpoint: False
+use_fp16: False
+use_new_attention_order: False
+use_scale_shift_norm: True
+
